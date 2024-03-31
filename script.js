@@ -1,15 +1,22 @@
-const homeButton = document.getElementById('home');
-const gameButton = document.getElementById('game');
-const musicButton = document.getElementById('music');
+const buttonOne = document.querySelector('#button1');
+const buttonTwo = document.querySelector('#button2');
+const buttonThree = document.querySelector('#button3');
+const buttonDiv = document.querySelector('.buttonDiv');
 
-homeButton.addEventListener("click", function() {
-    alert("메인 버튼 클릭");
-});
+buttonOne.addEventListener('click', function(e) {
+  alert('회원가입 버튼 클릭');
+  buttonDiv.textContent = '회원가입 영역';
+  buttonDiv.style.backgroundColor = "red";
+})
 
-gameButton.addEventListener('click', function(event) {
-    alert("게임 버튼 클릭");
-});
+buttonTwo.addEventListener('click', function(e) {
+  alert('로그인 버튼 클릭');
+  buttonDiv.textContent = '로그인 영역';
+  buttonDiv.style.backgroundColor = "purple";
+})
 
-musicButton.addEventListener('click', function(event) {
-    alert("쥬크박스 버튼 클릭");
-});
+buttonThree.addEventListener('click', function(e) {
+  alert('비밀번호 찾기 버튼 클릭');
+  buttonDiv.textContent = '비밀번호 찾기 영역';
+  buttonDiv.style.backgroundColor = "green";
+})
